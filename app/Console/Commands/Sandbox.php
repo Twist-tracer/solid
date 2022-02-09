@@ -14,18 +14,5 @@ class Sandbox extends Command
 
     public function handle(RateLimiter $limiter): void
     {
-        $this->info('Handle command');
-
-        /** @var Limit $limit */
-        $limit = $limiter->limiter('sandbox')($this);
-
-        if ($limiter->tooManyAttempts($limit->key, $limit->maxAttempts)) {
-            $this->warn('Limit reached');
-            return;
-        }
-
-        $limiter->hit($limit->key, $limit->decayMinutes * 60);
-
-        $this->info('Command handled');
     }
 }
