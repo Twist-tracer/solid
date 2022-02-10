@@ -2,8 +2,6 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Cache\RateLimiter;
-use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Console\Command;
 
 class Sandbox extends Command
@@ -12,7 +10,7 @@ class Sandbox extends Command
 
     protected $description = 'Command for tests';
 
-    public function handle(RateLimiter $limiter): void
+    public function handle(): void
     {
     }
 }
