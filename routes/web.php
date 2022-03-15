@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::inertia('/about', 'About');
+
+Route::get('/inertia', function () {
+    return inertia('Index', [
+        'param' => 'param from php',
+    ]);
+});
