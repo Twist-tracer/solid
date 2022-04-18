@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Patterns;
 
-use App\Architecture\Patterns\Architectural\PAC\PersonControl;
-use App\Architecture\Patterns\Architectural\PAC\SwingPersonAbstraction;
-use App\Architecture\Patterns\Architectural\PAC\SwingPersonPresentation;
+use App\Patterns\Architectural\PAC\PersonControl;
+use App\Patterns\Architectural\PAC\SwingPersonAbstraction;
+use App\Patterns\Architectural\PAC\SwingPersonPresentation;
 use PHPUnit\Framework\TestCase;
 
 /**

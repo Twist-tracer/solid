@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Patterns;
 
-use App\Architecture\Patterns\Fundamental\PropertyContainer\Movie;
+use App\Patterns\Fundamental\PropertyContainer\Movie;
 use PHPUnit\Framework\TestCase;
 
 class PropertyContainerTest extends TestCase

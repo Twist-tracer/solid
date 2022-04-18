@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Patterns;
 
-use App\Architecture\Patterns\Structure\Composite\Composite;
-use App\Architecture\Patterns\Structure\Composite\Leaf;
+use App\Patterns\Structure\Composite\Composite;
+use App\Patterns\Structure\Composite\Leaf;
 use PHPUnit\Framework\TestCase;
 
 /**
