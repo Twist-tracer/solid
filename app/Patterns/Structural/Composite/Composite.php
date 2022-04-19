@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Patterns\Structure\Composite;
+namespace App\Patterns\Structural\Composite;
 
-use App\Patterns\Structure\Composite\Component;
+use App\Patterns\Structural\Composite\Component;
 
 /**
  * Класс Контейнер содержит сложные компоненты, которые могут иметь вложенные

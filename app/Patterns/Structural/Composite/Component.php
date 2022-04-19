@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Patterns\Structure\Composite;
+namespace App\Patterns\Structural\Composite;
 
 /**
  * Базовый класс Компонент объявляет общие операции как для простых, так и для

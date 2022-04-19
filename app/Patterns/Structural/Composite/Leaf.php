@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Patterns\Structure\Composite;
+namespace App\Patterns\Structural\Composite;
 
 
-use App\Patterns\Structure\Composite\Component;
+use App\Patterns\Structural\Composite\Component;
 
 /**
  * Класс Лист представляет собой конечные объекты структуры. Лист не может иметь
