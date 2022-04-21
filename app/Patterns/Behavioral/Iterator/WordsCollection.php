@@ -1,10 +1,6 @@
 <?php
 
-
 namespace App\Patterns\Behavioral\Iterator;
-
-
-use App\Patterns\Behavioral\Iterator\AlphabeticalOrderIterator;
 
 /**
  * Конкретные Коллекции предоставляют один или несколько методов для получения

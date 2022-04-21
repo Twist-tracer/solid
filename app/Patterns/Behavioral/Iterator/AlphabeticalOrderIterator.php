@@ -1,8 +1,6 @@
 <?php
+
 namespace App\Patterns\Behavioral\Iterator;
-
-
-use App\Patterns\Behavioral\Iterator\WordsCollection;
 
 /**
  * Конкретные Итераторы реализуют различные алгоритмы обхода. Эти классы
