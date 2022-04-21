@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Behavioral\Strategy;
 
-use App\Patterns\Behavioral\Strategy\Strategy;
-
 /**
  * Контекст определяет интерфейс, представляющий интерес для клиентов.
  */

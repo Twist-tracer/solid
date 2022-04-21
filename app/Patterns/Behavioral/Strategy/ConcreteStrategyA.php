@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Behavioral\Strategy;
 
-use App\Patterns\Behavioral\Strategy\Strategy;
-
 /**
  * Конкретные Стратегии реализуют алгоритм, следуя базовому интерфейсу
  * Стратегии. Этот интерфейс делает их взаимозаменяемыми в Контексте.
