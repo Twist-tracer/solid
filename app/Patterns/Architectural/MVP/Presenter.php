@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Architectural\MVP;
 
-use App\Patterns\Architectural\MVP\Model;
-use App\Patterns\Architectural\MVP\View;
-
 class Presenter
 {
     private Model $model;

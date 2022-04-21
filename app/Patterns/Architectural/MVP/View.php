@@ -8,7 +8,6 @@ namespace App\Patterns\Architectural\MVP;
  */
 class View
 {
-
     public function render($path, array $vars = array()): string
     {
         ob_start();
@@ -16,5 +15,4 @@ class View
         require($path);
         return ob_get_clean() ?: '';
     }
-
 }
