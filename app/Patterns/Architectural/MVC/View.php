@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Architectural\MVC;
 
-use App\Patterns\Architectural\MVC\Model;
-
 class View
 {
     private Model $model;

@@ -1,9 +1,6 @@
 <?php
 
-
 namespace App\Patterns\Architectural\MVC;
-
-use App\Patterns\Architectural\MVC\Model;
 
 /**
  * Class Controller

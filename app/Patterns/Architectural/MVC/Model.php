@@ -4,7 +4,6 @@ namespace App\Patterns\Architectural\MVC;
 
 class Model
 {
-
     public string $string;
 
     /**
@@ -14,5 +13,4 @@ class Model
     {
         $this->string = "MVC + PHP = Awesome!";
     }
-
 }
