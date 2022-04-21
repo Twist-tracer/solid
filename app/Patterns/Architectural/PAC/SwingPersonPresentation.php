@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Architectural\PAC;
 
-use App\Patterns\Architectural\PAC\PersonPresentation;
-
 class SwingPersonPresentation implements PersonPresentation
 {
     /**

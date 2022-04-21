@@ -2,10 +2,6 @@
 
 namespace App\Patterns\Architectural\PAC;
 
-use App\Patterns\Architectural\PAC\PersonAbstraction;
-use App\Patterns\Architectural\PAC\PersonPresentation;
-use App\Patterns\Architectural\PAC\SimpleDateFormat;
-
 /**
  * Контроль
  * Class PersonControl
