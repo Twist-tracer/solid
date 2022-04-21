@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Behavioral\Memento;
 
-use App\Patterns\Behavioral\Memento\Memento;
-
 /**
  * Конкретный снимок содержит инфраструктуру для хранения состояния Создателя.
  */

@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Behavioral\Memento;
 
-use App\Patterns\Behavioral\Memento\ConcreteMemento;
-use App\Patterns\Behavioral\Memento\Memento;
-
 /**
  * Создатель содержит некоторое важное состояние, которое может со временем
  * меняться. Он также объявляет метод сохранения состояния внутри снимка и метод

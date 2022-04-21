@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Behavioral\Memento;
 
-use App\Patterns\Behavioral\Memento\Memento;
-use App\Patterns\Behavioral\Memento\Originator;
-
 /**
  * Опекун не зависит от класса Конкретного Снимка. Таким образом, он не имеет
  * доступа к состоянию создателя, хранящемуся внутри снимка. Он работает со
