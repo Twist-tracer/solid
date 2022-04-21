@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Behavioral\TemplateMethod;
 
-use App\Patterns\Behavioral\TemplateMethod\AbstractClass;
-
 /**
  * Обычно конкретные классы переопределяют только часть операций базового
  * класса.

@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Behavioral\TemplateMethod;
 
-use App\Patterns\Behavioral\TemplateMethod\AbstractClass;
-
 /**
  * Конкретные классы должны реализовать все абстрактные операции базового
  * класса. Они также могут переопределить некоторые операции с реализацией по
