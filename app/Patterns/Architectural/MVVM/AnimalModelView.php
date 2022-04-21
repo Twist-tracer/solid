@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Architectural\MVVM;
 
-use App\Patterns\Architectural\MVVM\AnimalModel;
-use function view;
-
 /**
  * Class ModelView
  * @package App\Architecture\Patterns\Architectural\MVVM
