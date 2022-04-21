@@ -9,19 +9,11 @@ namespace App\Patterns\Structural\Adapter;
 class Adapter extends Target
 {
     /**
-     * Адаптируемый экземпляр
-     *
-     * @var Adaptee
-     */
-    private $adaptee;
-
-    /**
      * Adapter constructor.
-     * @param Adaptee $adaptee
+     * @param Adaptee $adaptee Адаптируемый экземпляр
      */
-    public function __construct(Adaptee $adaptee)
+    public function __construct(private Adaptee $adaptee)
     {
-        $this->adaptee = $adaptee;
     }
 
     /**
@@ -30,6 +22,6 @@ class Adapter extends Target
      */
     public function request(): string
     {
-        return "Adapter: (TRANSLATED) " . strrev($this->adaptee->specificRequest());
+        return strrev($this->adaptee->specificRequest());
     }
 }
