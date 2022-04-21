@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Behavioral\State;
 
-use App\Patterns\Behavioral\State\Context;
-
 /**
  * Базовый класс Состояния объявляет методы, которые должны реализовать все
  * Конкретные Состояния, а также предоставляет обратную ссылку на объект

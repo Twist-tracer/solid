@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Behavioral\State;
 
-use App\Patterns\Behavioral\State\ConcreteStateA;
-use App\Patterns\Behavioral\State\State;
-
 class ConcreteStateB extends State
 {
     public function handle1(): void

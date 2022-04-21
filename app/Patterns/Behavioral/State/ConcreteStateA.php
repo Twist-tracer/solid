@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Behavioral\State;
 
-use App\Patterns\Behavioral\State\ConcreteStateB;
-use App\Patterns\Behavioral\State\State;
-
 /**
  * Конкретные Состояния реализуют различные модели поведения, связанные с
  * состоянием Контекста.
