@@ -2,16 +2,14 @@
 
 namespace App\Patterns\Behavioral\Servant;
 
-use App\Patterns\Behavioral\Servant\Movable;
-use App\Patterns\Behavioral\Servant\Position;
-
 /**
  * Реализует класс шаблона Слуга
  *
  * Class MoveServant
  * @package App\Architecture\Patterns\Behavioral\Servant
  */
-class MoveServant {
+class MoveServant
+{
 
     /**
      * Перемещает позицию фигуры в указанную точку
@@ -19,7 +17,8 @@ class MoveServant {
      * @param Movable $serviced
      * @param Position $where
      */
-    public function moveTo(Movable $serviced, Position $where): void {
+    public function moveTo(Movable $serviced, Position $where): void
+    {
         $serviced->setPosition($where);
     }
 
@@ -30,7 +29,8 @@ class MoveServant {
      * @param int $dx
      * @param int $dy
      */
-    public function moveBy(Movable $serviced, int $dx, int $dy): void {
+    public function moveBy(Movable $serviced, int $dx, int $dy): void
+    {
         $dx += $serviced->getPosition()->xPosition;
         $dy += $serviced->getPosition()->yPosition;
         $serviced->setPosition(new Position($dx, $dy));

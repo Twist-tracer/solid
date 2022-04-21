@@ -8,7 +8,8 @@ namespace App\Patterns\Behavioral\Servant;
  * Class Position
  * @package App\Architecture\Patterns\Behavioral\Servant
  */
-class Position {
+class Position
+{
     /**
      * Позиция x
      *
@@ -29,10 +30,10 @@ class Position {
      * @param int $x
      * @param int $y
      */
-    public function __construct(int $x, int $y) {
+    public function __construct(int $x, int $y)
+    {
         $this->xPosition = $x;
         $this->yPosition = $y;
 
     }
-
 }

@@ -2,14 +2,13 @@
 
 namespace App\Patterns\Behavioral\Servant;
 
-use App\Patterns\Behavioral\Servant\Position;
-
 /**
  * Интерфейс реализует методы работы с шаблоном Слуга
  * Interface Movable
  * @package App\Architecture\Patterns\Behavioral\Servant
  */
-interface Movable {
+interface Movable
+{
 
     /**
      * Установить позицию

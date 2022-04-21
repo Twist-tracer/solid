@@ -2,10 +2,8 @@
 
 namespace App\Patterns\Behavioral\Servant;
 
-use App\Patterns\Behavioral\Servant\Movable;
-use App\Patterns\Behavioral\Servant\Position;
-
-class Figure implements Movable {
+class Figure implements Movable
+{
 
     /**
      * @var Position
@@ -15,14 +13,16 @@ class Figure implements Movable {
     /**
      * @inheritDoc
      */
-    public function setPosition(Position $p): void {
+    public function setPosition(Position $p): void
+    {
         $this->p = $p;
     }
 
     /**
      * @inheritDoc
      */
-    public function getPosition(): Position {
+    public function getPosition(): Position
+    {
         return $this->p;
     }
 }
