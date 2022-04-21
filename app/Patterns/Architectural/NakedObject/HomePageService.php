@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Architectural\NakedObject;
 
-use App\Patterns\Architectural\NakedObject\HomePageViewModel;
-
 /**
  * Сервис для вывода главной страницы
  *
