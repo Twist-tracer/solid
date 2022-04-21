@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Behavioral\Specification;
 
-use App\Patterns\Behavioral\Specification\Item;
-use App\Patterns\Behavioral\Specification\Specification;
-
 /**
  * Имплементация спецификации И для всех спецификаций
  *
