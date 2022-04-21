@@ -2,10 +2,6 @@
 
 namespace App\Patterns\Architectural\VIPER;
 
-use App\Patterns\Architectural\VIPER\ButtonEntity;
-use App\Patterns\Architectural\VIPER\DataModel;
-use App\Patterns\Architectural\VIPER\TripEntity;
-
 /**
  * Class TripListInteractor
  * @package App\Architecture\Patterns\Architectural\VIPER

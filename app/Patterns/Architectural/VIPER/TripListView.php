@@ -2,9 +2,6 @@
 
 namespace App\Patterns\Architectural\VIPER;
 
-use App\Patterns\Architectural\VIPER\TripEntity;
-use App\Patterns\Architectural\VIPER\TripListPresenter;
-
 class TripListView
 {
 

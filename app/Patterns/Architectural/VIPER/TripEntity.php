@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Architectural\VIPER;
 
-use App\Patterns\Architectural\VIPER\ITrip;
-
 /**
  * Поездка, которая содержит список путевых точек, которые являются остановками в поездке.
  *

@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Architectural\VIPER;
 
-use App\Patterns\Architectural\VIPER\ITrip;
-
 /**
  * Приложение содержит класс DataModel, содержащий список поездок.
  * Class DataModel

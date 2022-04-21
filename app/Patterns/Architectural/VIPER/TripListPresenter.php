@@ -2,8 +2,6 @@
 
 namespace App\Patterns\Architectural\VIPER;
 
-use App\Patterns\Architectural\VIPER\TripListInteractor;
-
 /**
  * Представитель поездки
  * Class TripListPresenter
