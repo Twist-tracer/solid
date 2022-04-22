@@ -6,6 +6,7 @@ namespace App\Patterns\Structural\PipesAndFilters;
  * Плечики
  *
  * Class Shoulder
+ *
  * @package App\Patterns\Structural\PipesAndFilters
  */
 class Shoulder implements Process

@@ -6,61 +6,27 @@ namespace App\Patterns\Structural\PipesAndFilters;
  * Модификаторы
  *
  * Class Modifier
+ *
  * @package App\Patterns\Structural\PipesAndFilters
  */
 class Modifier
 {
     /**
-     * Утюги
-     *
-     * @var Iron
-     */
-    private Iron $iron;
-
-    /**
-     * Плечики
-     *
-     * @var Shoulder
-     */
-    private Shoulder $shoulder;
-
-    /**
-     * Иголка и нитка
-     *
-     * @var ThreadNeedle
-     */
-    private ThreadNeedle $thread;
-
-    /**
-     * Modifier constructor.
-     * @param Shoulder $shoulder Плечики
-     * @param ThreadNeedle $thread Иголки
-     * @param Iron $iron Утюг
-     */
-    public function __construct(Shoulder $shoulder, ThreadNeedle $thread, Iron $iron)
-    {
-        $this->iron = $iron;
-        $this->shoulder = $shoulder;
-        $this->thread = $thread;
-    }
-
-    /**
      * Модификация
      *
-     * @param array $list Список
-     * @return array
+     * @param array<Clothes> $clothes Список
+     *
+     * @return void
      */
-    public function modify(array $list): void
+    public function modify(array $clothes): void
     {
-        // Одежда на глажку
-        $actualList = array_filter($list, fn(Clothes $clothes) => $clothes->isDirty());
+        $processableClothes = array_filter($clothes, fn(Clothes $item) => $item->isProcessable());
 
-        foreach ($actualList as $item) {
-            $process = $this->matches($item);
+        foreach ($processableClothes as $item) {
+            $processes = $this->matches($item);
 
-            /** @var Process $proc */
-            foreach ($process as $proc) {
-                $proc->process();
+            foreach ($processes as $process) {
+                $process->process();
             }
         }
     }
@@ -69,11 +35,13 @@ class Modifier
      * Назначает задания для одежды
      *
      * @param Clothes $clothes
-     * @return array
+     *
+     * @return array<Process>
      */
     private function matches(Clothes $clothes): array
     {
         $processes = [];
+
         if ($clothes->isIron()) {
             $processes[] = new Iron();
         }
@@ -85,6 +53,7 @@ class Modifier
         if ($clothes->isThreadNeed()) {
             $processes[] = new ThreadNeedle();
         }
+
         return $processes;
     }
 }
