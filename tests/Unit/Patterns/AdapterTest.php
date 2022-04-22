@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
  */
 class AdapterTest extends TestCase
 {
-    public function testStrategy(): void
+    public function testAdapter(): void
     {
         $target = new Target();
 
