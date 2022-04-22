@@ -4,7 +4,6 @@ namespace App\Patterns\Structural\Filter;
 
 class AndCriteria implements Criteria
 {
-
     /**
      * Набор выставленных критериев
      *
@@ -22,10 +21,6 @@ class AndCriteria implements Criteria
         $this->criteria = $criteria;
     }
 
-
-    /**
-     * @inheritDoc
-     */
     public function meets(array $laptops): array
     {
         foreach ($this->criteria as $criterion) {

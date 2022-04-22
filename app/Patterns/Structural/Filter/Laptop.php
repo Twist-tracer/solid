@@ -29,7 +29,6 @@ class Laptop implements ILaptop
      */
     private string $os;
 
-
     /**
      * Laptop constructor.
      *

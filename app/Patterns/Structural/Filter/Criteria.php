@@ -14,7 +14,7 @@ interface Criteria
      *
      * @param array $laptops список желаемых условий
      *
-     * @return array[Laptop]
+     * @return array<Laptop>
      */
     public function meets(array $laptops): array;
 }

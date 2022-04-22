@@ -9,7 +9,6 @@ namespace App\Patterns\Structural\Filter;
  */
 interface ILaptop
 {
-
     /**
      * Получить процессор
      * @return string
