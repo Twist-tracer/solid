@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
  */
 class PACTest extends TestCase
 {
-    public function testExample(): void
+    public function testPAC(): void
     {
         $str = <<<'DOC'
 Вот тут дата:Форматируем: 2000-05-01 10:10:10
