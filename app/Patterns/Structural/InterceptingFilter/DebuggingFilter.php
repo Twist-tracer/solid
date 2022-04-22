@@ -6,38 +6,27 @@ namespace App\Patterns\Structural\InterceptingFilter;
  * Реализует фильтр дебага
  *
  * Class DebuggingFilter
+ *
  * @package App\Patterns\Structural\InterceptingFilter
  */
 class DebuggingFilter implements IProcessor
 {
     /**
-     * Целевой процесс для дебага
-     *
-     * @var IProcessor
+     * @param ?IProcessor $target Целевой процесс для дебага
      */
-    private IProcessor $target;
-
-    /**
-     * DebuggingFilter constructor.
-     *
-     * @param IProcessor $myTarget Процесс для дебага
-     */
-    public function __construct(IProcessor $myTarget)
+    public function __construct(private ?IProcessor $target = null)
     {
-        $this->target = $myTarget;
     }
 
     /**
      * Запуск фильтра дебага
-     *
-     * @param Request $req Объект запроса
-     * @param Response $res Объект ответа
      */
-    public function execute(Request $req, Response $res): void
+    public function execute(Request $request, Response $response): void
     {
         //Do some filter processing here, such as
         echo "Debugging filter run" . PHP_EOL;
+
         // displaying request parameters
-        $this->target->execute($req, $res);
+        $this->target?->execute($request, $response);
     }
 }

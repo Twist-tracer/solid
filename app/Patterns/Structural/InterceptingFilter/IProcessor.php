@@ -6,6 +6,7 @@ namespace App\Patterns\Structural\InterceptingFilter;
  * Определяет интерфейс обработки запроса
  *
  * Interface IProcessor
+ *
  * @package App\Patterns\Structural\InterceptingFilter
  */
 interface IProcessor
@@ -13,8 +14,8 @@ interface IProcessor
     /**
      * Выполнить обработку запроса
      *
-     * @param Request $req Объект запроса
-     * @param Response $res Объект ответа
+     * @param Request $request Объект запроса
+     * @param Response $response Объект ответа
      */
-    public function execute(Request $req, Response $res): void;
+    public function execute(Request $request, Response $response): void;
 }
