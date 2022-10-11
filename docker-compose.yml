@@ -1,0 +1,25 @@
+version: "3.5"
+
+services:
+  app: &app-service
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: "octane-app"
+    restart: on-failure
+    volumes:
+      - .:/app
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+
+  websocket:
+    <<: *app-service
+    container_name: "octane-ws"
+    command: 'php /app/artisan websocket:start'
+    ports:
+      - "3000:3000"
+networks:
+  app-network:
+    driver: bridge
