@@ -20,7 +20,7 @@ class AdapterTest extends TestCase
 
         $adaptee = new Adaptee();
 
-        $this->expectErrorMessage('Call to undefined method App\Patterns\Structural\Adapter\Adaptee::request()');
+        $this->expectExceptionMessage('Call to undefined method App\Patterns\Structural\Adapter\Adaptee::request()');
         $this->assertEquals('The extended target\'s behavior', $adaptee->request());
 
         $adapter = new Adapter($adaptee);

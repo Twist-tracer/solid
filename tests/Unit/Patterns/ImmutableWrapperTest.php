@@ -64,7 +64,7 @@ class ImmutableWrapperTest extends TestCase
         $immutable = new ImmutableRight($mutable);
         $obj1 = md5(serialize($mutable));
 
-        $this->expectErrorMessage('Call to undefined method App\Patterns\Fundamental\ImmutableWrapper\ImmutableRight::setY()');
+        $this->expectExceptionMessage('Call to undefined method App\Patterns\Fundamental\ImmutableWrapper\ImmutableRight::setY()');
         $immutable->setY(10);
         $obj2 = md5(serialize($immutable));
 
