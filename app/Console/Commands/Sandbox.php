@@ -12,6 +12,5 @@ class Sandbox extends Command
 
     public function handle(): void
     {
-
     }
 }
